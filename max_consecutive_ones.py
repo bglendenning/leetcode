@@ -7,6 +7,14 @@ def find_max_consecutive_ones(nums):
     """https://leetcode.com/problems/max-consecutive-ones/
     Given a binary array, find the maximum number of consecutive 1s in this array.
 
+    Example:
+        $ python max_consecutive_ones.py [--nums_len] [--timeit_number]
+
+    Results:
+        Per leetcode submission:
+            Runtime: 284 ms, faster than 93.22% of Python online submissions for Max Consecutive Ones.
+            Memory Usage: 13.6 MB, less than 87.07% of Python online submissions for Max Consecutive Ones.
+
     :param nums: 0 <= len(list) <= 10,000. contains only values of 0 & 1
     :type nums: list
     :returns: maximum number of consecutive 1s in nums
@@ -29,8 +37,8 @@ def nums(nums_len):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--nums_len', type=int, default=10000, help='The length of the list of 1s & 0s.')
-    parser.add_argument('--timeit_number', type=int, default=1000, help='The number of times timeit should loop for'
+    parser.add_argument('--nums_len', type=int, default=100, help='The length of the list of 1s & 0s.')
+    parser.add_argument('--timeit_number', type=int, default=100000, help='The number of times timeit should loop for'
         ' timing the function. Large --nums_length and --timeit_number values will result in lengthy execution.')
     args = parser.parse_args()
     nums_list = nums(args.nums_len)
