@@ -23,7 +23,7 @@ def find_max_consecutive_ones(nums):
     total = temp = 0
     for n in nums:
         if n:
-            temp += n
+            temp += 1
             if temp > total:
                 total = temp
         else:
@@ -42,6 +42,7 @@ if __name__ == '__main__':
         ' timing the function. Large --nums_length and --timeit_number values will result in lengthy execution.')
     args = parser.parse_args()
     nums_list = nums(args.nums_len)
-    print('%s seconds to execute find_max_consecutive_ones(nums) %d times, where len(nums) = %s.'
+    print('%d consecutive 1s found in %s.' % (find_max_consecutive_ones(nums_list), nums_list))
+    print('%s seconds to execute find_max_consecutive_ones(nums) %d times, where len(nums) = %d.'
         % (timeit.timeit('find_max_consecutive_ones(nums_list)', number=args.timeit_number, globals=globals()),
             args.timeit_number, args.nums_len))
