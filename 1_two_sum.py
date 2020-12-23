@@ -12,7 +12,7 @@ def two_sum(nums, target):
     lists.
 
     Example:
-        $ python 1295_numbers_even_digits.py [--nums_len] [--timeit_number]
+        $ python 1_two_sum.py [--nums_len] [--timeit_number]
 
     Results:
         Per leetcode submission:
