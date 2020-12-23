@@ -15,9 +15,9 @@ def numbers_with_even_digits(nums):
         Runtime: 32 ms, faster than 93.15% of Python online submissions for Find Numbers with Even Number of Digits.
         Memory Usage: 13.4 MB, less than 59.89% of Python online submissions for Find Numbers with Even Number of Digits.
 
-    :param nums: 1 <= len(list) <= 500. contains only values of 0 & 1
+    :param nums: 1 <= len(nums) <= 500, 1 <= nums[i] <= 10^5
     :type nums: list
-    :returns: maximum number of consecutive 1s in nums
+    :returns: number of values in nums with even number of digits
     :rtype: int
     """
     count = 0
