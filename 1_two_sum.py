@@ -4,7 +4,7 @@ from random import randint
 
 
 def two_sum(nums, target):
-    """https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+    """https://leetcode.com/problems/two-sum/
     Given an array nums of integers, return how many of them contain an even number of digits.
     Credit to: https://leetcode.com/problems/two-sum/discuss/952424/solution-using-dicts-O(n)-Py3 for providing a
     solution I studied that allowed me to better understand using hash tables to reduce time complexity for problems of
