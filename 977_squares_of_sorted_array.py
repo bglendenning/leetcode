@@ -9,7 +9,7 @@ def squares_of_sorted_array(nums):
     non-decreasing order.
 
     Example:
-        $ python 977_squares_of_sorted_array [--nums_len] [--timeit_number]
+        $ python 977_squares_of_sorted_array.py [--nums_len] [--timeit_number]
 
     Results:
         Per leetcode submission:
